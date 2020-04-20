@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/menu.css" />
+    <link rel="stylesheet" type="text/css" href="../css/duzen.css" />
+    <title></title>
+  </head>
+  <body>
+
+    <nav class="yataymenu">
+      <ul>
+      <li> <img src="../assets/logo.png" alt="logo"  id="logo" align="left"/></li>
+      <li><a href="../index.html">ANA SAYFA</a></li>
+      <li><a href="web.html">WEB TASARIM</a>
+        <ul>
+          <li><a href="html.html">HTML</a></li>
+          <li><a href="css.html">CSS</a></li>
+          <li><a href="js.html">JAVASCRIPT</a></li>
+        </ul>
+      </li>
+      <li><a href="iletisim.html">İLETİŞİM</a></li>
+      </ul>
+    </nav><br><br><br><br><br><br><br><br>
+
+    <nav class="nav">
+
+     <ul class="dikeymenu">
+
+       <li><a href="html.html">HTML</a></li>
+       <li><a href="css.html">CSS</a></li>
+       <li><a href="js.html">JAVASCRIPT</a>
+
+         <ul class="altmenu">
+           <li><a href="giris.html">Giriş</a></li>
+           <li><a href="syntax.html">Yazılım (Syntax) Yapısı</a></li>
+           <li><a href="degisken.html">Değişkenler</a></li>
+           <li><a href="operator.html">Operatörler</a></li>
+           <li><a href="aritmetik.html">Aritmetik</a></li>
+           <li><a href="veri.html">Veri Tipleri</a></li>
+           <li><a href="fonks.html">Fonksiyon Yapısı</a></li>
+           <li><a href="olaylar.html">Olaylar (Events)</a></li>
+           <li><a href="string.html">Stringler, Sayılar, Diziler ve Dizi İşlemleri</a></li>
+           <li><a href="if.html">If Koşul Yapıları</a></li>
+           <li><a href="dongu.html">Döngüler</a></li>
+           <li><a href="tip.html">Tip Dönüşümleri</a></li>
+           <li><a href="calisma.html">Çalışma Yapısı ve Genel Mimarisi</a></li>
+           <li><a href="nesne.html">JavaScript Object ( Nesne) Modeli ve Kullanımı</a></li>
+           <li> <a href="dom.html"> DOM (Document Object Model) Kullanımı</a> </li>
+         </ul>
+       </li>
+
+       <li><a href="jsornek.html">JAVASCRİPT ÖRNEKLERİ</a>
+           <ul class="altmenu">
+           <li><a href="hw2examples/dinamik.html">WEB sayfalarına dinamik olarak HTML elementleri eklemek ve çıkartmak</a></li>
+           <li><a href="hw2examples/adamasmaca.html">Adam Asmaca </a></li>
+           <li><a href="hw2examples/kullanici.html">Kullanıcı Formu</a></li>
+             <li><a href="hw2examples/alisveris.html">Alışveriş Listesi</a></li>
+         </ul>
+         </li>
+        <li><a href="php.html">PHP</a>
+
+       </li>
+     </ul>
+   </nav>
+   <br>
+   <div class="metin">
+     <p>
+      <h1>JavaScript’de Yazım Kuralları (Syntax)</h1>
+      <p> JavaScript’in yazılım kurallarının (Syntax) çoğu JAVA programlamaya benzer ancak JavaScript aynı zamanda Perl ve Python’dan da etkilenir. JavaScript</p>
+      <p>karakter kümesi olarak Unicode (Evrensel Kod) Unicode Consortium organizasyonu tarafından geliştirilen ve her karaktere bir sayı değeri karşılığı atayan </p>
+      <p>bir endüstri standardıdır.  karakter kümesi kullanılır. Fakat, bu her Unicode kodlamasının bir endüstri standardıdır.  karakter kümesi kullanılır. Fakat,</p>
+      <p>  bu her Unicode kodlamasının Karakterin “Glyph” (Kılıf) ad verilen görüntüsünün de belge çözümleyicinin içinde tanımlanmış  olması gerekmektedir. </p>
+      <p>Doğal olarak bu olasılık az kullanılan arkaik diller için geçerlidir. Batı dillerine ait tüm karakterler sorunsuzca görüntülenecektir. Diğer dillerinde karakter </p>
+      <p>kodları çözümleyicilere eklenmeye devam etmektedir.</p>
+
+      <p>JavaScript programlama dilinde Unicode karakterlerinin desteklenmesi, JavaScript programlarında, değişken isimler, fonksiyon isimleri gibi kullanıcı </p>
+      <p>tanımlı her değişken ve nesnenin Türkçe isimlerle tanıtılıp çağırılabileceği anlamına gelir. Bu yerel olarak programın anlaşılabilirliliğini arttırır, fakat</p>
+      <p> uluslararası ortamlarda, yerel diller ile yazılmış programların anlaşılabilililiği oldukça azalır.</p>
+      <p>JavaScript dilinde alfanumeric değişkenler ve düzenli ifadeler (RegExp) gereği olmadıkça, her türlü boşluk, satır aralığı ve tab karakterlerini göz ardı eder. </p>
+      <p>Bu nedenle, kendimiz için en anlamlı kod düzenlemelerini yaparak, program yazım konforuna sahip oluruz. JavaScript programlama dili,  </p>
+      <p>Algol/Pascal/ADA serbest yazım formunu aynen destekler. Yazım yöntemi çok esnek olmasına karşın, alışkanlıktan kaynaklanan belirli kalıplar içinde </p>
+      <p>kalmanın oldukça yararı vardır. Çünkü yazılmış olan kodun veya kod bloğunun ileride bakımı için bize büyük kolaylıklar sağlayacaktır. JavaScript </p>
+      <p>programlama dilinde, bazı program dillerinde olduğu gibi, blok içinde alınmış kodlar, yeni bir kapsam alanı yaratmazlar. JavaScript yorumlayıcısı, bildirim  </p>
+      <p>bekleyen if gibi program öğelerine tek bildirim yerine birden çok bildirim belirtilmesi için çalıştırılacak bildirimlerin bir bildirim bloğu { } içine alınmasını</p>
+      <p>öngörmüştür. Bildirim bloğunda kullanılacak program adımları bellidir ve bunlarda kullanılacak bildirim bloğu { }’nun amacı, içeriğine yeni </p>
+      <p>bir kapsam açmak değil, içeriği olan bildirimlerin sıra ile çalıştırılmasını sağlamaktır.</p>
+      <p>JavaScript’te bütün değikenler harf, alt çizgi veya ( _  veya altbağlaç ) veya dolar ( $ ) işareti ile başlar. Rakamlar ve diğer karakterler bu üç karakterden  </p>
+      <p>sonra kullanılır.Değişkenler $ işareti ile başlatılabilmesine karşın güncel kullanımda bu olanak sadece makine tarafından oluşturulan otomatik JavaScript  </p>
+      <p>kodlarına bırakılmaktadır. Yani insanlar tarafından oluşturulan kodlarda, önleyici hiç bir kural olmamasına karşın, değişken isimlerinde $ karakteri pek </p>
+      <p>kullanılmamaktadır.JavaScript büyük küçük harf duyarlıdır (Case Sensitive). Yani aynı isimde hem büyük harfle hemde küçük harfle değişken oluşturursanız  </p>
+      <p>JavaScript bu iki değişkeni ayrı ayrı 7/24 açık bir web sitesi, özellikle bir e-ticaret sitesi ise günün her saatinde satış yapması demektir. Satış ve pazarlama </p>
+      <p>gelirinin artması, reklam ve kampanya giderlerinin düşmesi profesyonel bir web tasarımı ile mümkündür.</p>
+      <h2>JavaScript’te Yorum Satırı Ekleme</h2>
+      <p>Javascript’te yorum satırı ekme tıpkı C++ ve diğer dillerde olduğu gibidir. Programcıların yazmış oldukları kodları açıklamak için kullandığı ve kodun içinde  </p>
+      <p>yazdıkları kimi zaman çok büyük olan metinlerdir. Gerek fonksiyonlarda gerekse değişkenlerde yorum veya açıklama satırı kullanılarak fonksiyonun veya </p>
+      <p>değişkenin ne tür iş yaptığını veya ne tür bir çıktı verdiğini belirtilir. Tek satır açıklama yazmak için satırın başına // metin yazmanı yeterliyken birden</p>
+      <p>fazla satırlı yorum veya açıklama  yazmak için metninizi   /*  metin   */  şeklinde yazmalısınız. Yorumlar ve açıklama satırları yorumlayıcılar (interpreter)</p>
+      <p> tarafından dikkate alınmaz. Dolayısıyla sisteminize de herhangi bir işlem yükü getirmeyecektir. Programcılar yazmış oldukları fonksiyonları ve değişkenleri </p>
+      <p>daha sonra hatırlamak veya başkalarının da rahat bir şekilde okuyabilmeleri için yorum ve açıklama satırlarına önem verirler.</p>
+      <img src="../assets/syntax.png" alt="syntax"  id="syntax" align="center"/>
+      <p>Bir web sayfasına JavaScript kodu ekleyebilmek için script etiketi kullanmalısınız. Aşağıdaki örneği kullanarak pratikte bunun neye benzediğini görebilirsiniz:</p>
+      <img src="../assets/ekle.png" alt="ekle"  id="ekle" align="center"/>
+      <p></p>
+   </div>
+   <div id="footer">
+
+         <p> <b>Bizimle İletişime Geç!</b> </p>
+         <p> Call: <b> 555555555</b> &nbsp;</p>
+          <p>  Email:<a href="mailto:ecenr502@gmail.com"> <b>ecenr502@gmail.com</b> </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            © 2020 Tüm Hakları Saklıdır.
+              Hazırlayan <i class="fa fa-heart pulse"></i> Ece Nur DOĞAN
+          </p>
+           <br>
+       </div>
+  </body>
+
+</html>

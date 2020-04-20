@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/menu.css" />
+    <link rel="stylesheet" type="text/css" href="../css/duzen.css" />
+    <title></title>
+  </head>
+  <body>
+
+    <nav class="yataymenu">
+      <ul>
+      <li> <img src="../assets/logo.png" alt="logo"  id="logo" align="left"/></li>
+      <li><a href="../index.html">ANA SAYFA</a></li>
+      <li><a href="web.html">WEB TASARIM</a>
+        <ul>
+          <li><a href="html.html">HTML</a></li>
+          <li><a href="css.html">CSS</a></li>
+          <li><a href="js.html">JAVASCRIPT</a></li>
+        </ul>
+      </li>
+      <li><a href="iletisim.html">İLETİŞİM</a></li>
+      </ul>
+    </nav><br><br><br><br><br><br><br><br>
+
+    <nav class="nav">
+
+     <ul class="dikeymenu">
+
+       <li><a href="html.html">HTML</a></li>
+       <li><a href="css.html">CSS</a></li>
+       <li><a href="js.html">JAVASCRIPT</a>
+
+         <ul class="altmenu">
+           <li><a href="giris.html">Giriş</a></li>
+           <li><a href="syntax.html">Yazılım (Syntax) Yapısı</a></li>
+           <li><a href="degisken.html">Değişkenler</a></li>
+           <li><a href="operator.html">Operatörler</a></li>
+           <li><a href="aritmetik.html">Aritmetik</a></li>
+           <li><a href="veri.html">Veri Tipleri</a></li>
+           <li><a href="fonks.html">Fonksiyon Yapısı</a></li>
+           <li><a href="olaylar.html">Olaylar (Events)</a></li>
+           <li><a href="string.html">Stringler, Sayılar, Diziler ve Dizi İşlemleri</a></li>
+           <li><a href="if.html">If Koşul Yapıları</a></li>
+           <li><a href="dongu.html">Döngüler</a></li>
+           <li><a href="tip.html">Tip Dönüşümleri</a></li>
+           <li><a href="calisma.html">Çalışma Yapısı ve Genel Mimarisi</a></li>
+           <li><a href="html/nesne.html">JavaScript Object ( Nesne) Modeli ve Kullanımı</a></li>
+           <li> <a href="html/dom.html"> DOM (Document Object Model) Kullanımı</a> </li>
+         </ul>
+       </li>
+       <li><a href="jsornek.html">JAVASCRİPT ÖRNEKLERİ</a>
+           <ul class="altmenu">
+           <li><a href="hw2examples/dinamik.html">WEB sayfalarına dinamik olarak HTML elementleri eklemek ve çıkartmak</a></li>
+           <li><a href="hw2examples/adamasmaca.html">Adam Asmaca </a></li>
+           <li><a href="hw2examples/kullanici.html">Kullanıcı Formu</a></li>
+             <li><a href="hw2examples/alisveris.html">Alışveriş Listesi</a></li>
+         </ul>
+         </li>
+
+        <li><a href="php.html">PHP</a>
+       </li>
+     </ul>
+   </nav>
+   <br>
+   <div id="metin">
+     <p>
+      <h1>DOM (Document Object Model) Kullanımı</h1>
+      <p>Tarayıcı bir Web sayfasını yüklendiğinde DOM nesnesini de oluşturur. Yüklenen DOM, belge için bir dizi düğüm ve nesne sunmaktadır. Düğümler ile </p>
+      <p>ayrıca olaylar ve tetikleyiciler eklenebilir. Özetle programlama dilini WEB sayfasına bağlamak için kullanılır.</p>
+      <p>DOM modeli nesneleri aşağıdaki gibi ağaç yapısında oluşturmaktadır.</p>
+      <p>JavaScript, Nesne Modelini kullanarak  HTML belgesini düzenlemek için gerekli tüm yetkilere sahiptir. Aşağıdaki gibi belge üzerinde tüm işlemleri</p>
+      <p>gerçekleştirebiliriz.</p>
+      <p> - JavaScript sayfadaki tüm HTML öğrelerini değiştirebilir. </p>
+      <p> - JavaScript sayfadaki tüm HTML niteliklerini değiştirebilir.</p>
+      <p> - JavaScript sayfadaki tüm CSS stillerini değiştirebilir. </p>
+      <p> - JavaScript mevcut HTML belgesindeki nitelikleri kaldırabilir.</p>
+      <p> - JavaScript yeni HTML öğeleri ve nitelikleri ekleyebilir. </p>
+      <p> - JavaScript sayfadaki tüm HTML niteliklerini değiştirebilir.</p>
+      <p> - JavaScript yeni HTML olayları oluşturabilir.</p>
+
+     <img src="../assets/dom1.png" alt="dom1"  id="dom1" align="left"/>
+
+     <br><br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br><br> <br><br><br>
+
+       <h2>DOM (Document Object Model) Nedir?</h2>
+
+       <p>- Nesne olarak HTML etiketi şunlara sahiptir. </p>
+       <p>- HTML etiketleri birer nesnedir.</p>
+       <p>- HTML etiketlerinin özellikleri</p>
+       <p>- HTML etiketlerine erişim metodları</p>
+       <p>- Tüm HTML etiketlerinin olayları </p>
+
+       <h2>DOM Programlama Arayüzü</h2>
+
+       <p> - JavaScript ile Tüm HTML DOM ağacına ulaşabilirsiniz. </p>
+       <p> - DOM içinde tüm HTML etiketleri birer nesne (object) olarak oluşturulmuştur.</p>
+       <p> - Programlama arayüzü her etiket için metot(method) ve özellikler(property) sunar. </p>
+       <p> - Özellik( Property) etiket değeri üzerinde okuma ve değiştirme yapma imkanı sunar.(İçeriği değiştirme gibi)</p>
+       <p> - Methot (Method) etiket üzerinde eylemler gerçekleştirme imkanı sunar.(Yeni etiketler ekleme gibi) </p>
+       <p> Örnek: Aşağıdaki örnekte id değeri test olan bir etiketin içesindeki yazıyı değiştirme işlemi gerçekleştirilmiştir. Örnekte getElementById metodu, </p>
+       <p>innerHTML özelliği göstermektedir.</p>
+
+       <img src="../assets/dom2.png" alt="dom2"  id="dom2" align="left"/>
+
+       <br><br><br><br><br><br><br><br><br> <br><br><br><br><br>
+
+        <h3>getElementById Metodu</h3>
+
+        <p>Bir HTML etiketine erişmek için kullanılan en sık yöntemlerden biridir. Etiketin id niteliğini kullanır.</p>
+
+        <h3>innerHTML Özelliği</h3>
+
+        <p>Bir HTML etiketinin içeriğini öğrenmenin en kolay yoludur.  innerHTML ile etiketin içeriğini almak yada değiştirmek mümkündür.</p>
+
+        <h2>HTML DOM document Nesnesi</h2>
+
+        <p>document nesnesi web sayfasını temsil eder. Sayfa içindeki her hangi bir elemente ulaşmak için document nesnesi ile başlamak gerekmektedir.</p>
+        <p>  HTML etiketleri üzerinde düzenleme yapmak için kullanılan bazı document metotları aşağıda gösterilmiştir.</p>
+
+        <h2>HTML Etiketlerini Seçme</h2>
+
+        <p> - document.getElementById(id): id niteliği ile eşleşen ilk kaydı getirir. </p>
+        <p> - document.getElementsByName(name): name niteliği ile eşleşen tüm kayıtları dizi olarak  getirir.</p>
+        <p> - document.getElementsByTagName(etiketadı):etiket adı ile eşleşen tüm kayıtları dizi olarak getirir. </p>
+        <p> - document.getElementsByClassName(classAdı):class niteliği ile eşleşen tüm kayıtları dizi olarak getirir.</p>
+        <p> - document.querySelector(seçici): seçici ile eşleşen ilk kaydı getirir. </p>
+        <p> - document.querySelectorAll(seçici): seçici ile eşleşen tüm kayıtları dizi olarak getir.</p>
+        <p>Aşağıdaki  document özellikleri ile de HTML nesnelerine liste olarak erişebilirsiniz. HTML belgesindeki nesneleri dizi listesi olarak çeker.</p>
+        <p>Not: body, head, documentElement, title tek bir nesneyi döndürür. Diğerleri nesnelerden oluşan bir dizi döndürür.</p>
+
+         <img src="../assets/dom3.png" alt="dom3"  id="dom3" align="left"/><br>
+         <img src="../assets/dom4.png" alt="dom4"  id="dom4" align="left"/><br>
+         <img src="../assets/dom5.png" alt="dom5"  id="dom5" align="left"/><br>
+         <img src="../assets/dom6.png" alt="dom6"  id="dom6" align="left"/><br>
+         <img src="../assets/dom7.png" alt="dom7"  id="dom7" align="left"/><br>
+         <img src="../assets/dom8.png" alt="dom8"  id="dom8" align="left"/><br>
+         <img src="../assets/dom9.png" alt="dom9"  id="dom9" align="left"/><br>
+         <img src="../assets/dom10.png" alt="dom10"  id="dom10" align="left"/><br>
+         <img src="../assets/dom11.png" alt="dom11"  id="dom11" align="left"/><br>
+         <img src="../assets/dom12.png" alt="dom12"  id="dom12" align="left"/><br>
+         <img src="../assets/dom13.png" alt="dom13"  id="dom13" align="left"/><br>
+         <img src="../assets/dom14.png" alt="dom14"  id="dom14" align="left"/><br>
+         <img src="../assets/dom15.png" alt="dom15"  id="dom15" align="left"/><br>
+         <img src="../assets/dom16.png" alt="dom16"  id="dom16" align="left"/><br>
+         <img src="../assets/dom17.png" alt="dom17"  id="dom17" align="left"/><br>
+
+   </div>
+   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> <br><br>
+   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> <br><br>
+   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> <br><br>
+   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> <br><br>
+   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> <br><br>
+   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> <br><br>
+   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> <br><br>
+   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> <br><br>
+   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> <br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> <br><br><br>
+   <div id="footer">
+
+         <p> <b>Bizimle İletişime Geç!</b> </p>
+         <p> Call: <b> 555555555</b> &nbsp;</p>
+          <p>  Email:<a href="mailto:ecenr502@gmail.com"> <b>ecenr502@gmail.com</b> </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            © 2020 Tüm Hakları Saklıdır.
+              Hazırlayan <i class="fa fa-heart pulse"></i> Ece Nur DOĞAN
+          </p>
+           <br>
+       </div>
+  </body>
+
+</html>
