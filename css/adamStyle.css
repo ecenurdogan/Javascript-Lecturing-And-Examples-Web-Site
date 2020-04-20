@@ -1,0 +1,58 @@
+body{
+	margin-bottom:30px;
+
+	background-color: #e5e5e5;
+	font-family: Arial, Helvetica, serif;
+}
+h1{
+	font-size: 1.75em;
+}
+#icerik{
+	background-color:#0050EF;
+}
+#ipucu{
+	background:#b2b2b2;
+}
+#uyari{
+  color: #A20025;
+	font-size:20;
+}
+#adaminResmi{
+	width:20%;
+	height:60%;
+}
+#kelime{
+  color: #240710;
+  font-size: 20;
+}
+#alfabe a{
+	color: #bf100d;
+	text-decoration:none;
+	background-color: transparent;
+	font-family: Arial, Helvetica, serif;
+	text-transform: capitalize;
+}
+
+#yenidenBaslatButonu {
+	font-family: Arial, Helvetica, serif;
+  font-size: 15px;
+  border: 5px ;
+	padding: 5px;
+}
+#yenidenBaslatButonu:hover{ /* Üstüne gelince yap */
+	background-color: #e5e5e5;
+  border: 2px outset #c61919;
+
+}
+#yenidenBaslatButonu:active{ /* Tıklayınca yap */
+	background-color: #008080;
+    border: 2px outset #F51A92;
+    position:relative;
+    top:1px;
+}
+.harfler{
+	font-size: 25;
+}
+#baslik{
+	background:#D8C101;
+}
