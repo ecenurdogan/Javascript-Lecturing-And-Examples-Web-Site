@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="../../css/form.css"/>
+  <script src="../../js/form.js"></script>
+
+</head>
+<body>
+  <h3>Kullanıcı Formu</h3><br><br>
+
+	<form name="islem"  method="post"  onsubmit="return isValid(this)" id="form" >
+
+		<table border="1" cellpadding="7" cellspacing="0"  >
+				<tr>
+					<th>Ad Soyad</th>
+					<th><input type="text" name="bilgilerim_ad" onSubmit="return onsubmit()" /></th>
+				</tr>
+				<tr>
+					<th>TC Kimlik</th>
+					<th><input name="bilgilerim_tc" type="number" id="tckimlikno" onblur="tckontrol(this);" maxlength="11" /></th>
+				</tr>
+				<tr>
+					<th>E-mail</th>
+					<th><input type="text" name="bilgilerim_mail" /></th>
+				</tr>
+				<tr>
+					<th>Adres</th>
+					<th> <textarea name="bilgilerim_adres" rows="5" cols="20"></textarea> </th>
+				</tr>
+				<tr>
+					<th>Cinsiyet</th>
+					<th><input type="radio" value="Erkek" name="bilgilerim_cinsiyet" />Erkek
+							<input type="radio" value="Kadın" name="bilgilerim_cinsiyet"/>Kadın
+					</th>
+			 </tr>
+				<tr>
+					<th colspan="2" >
+						<button type="submit" name="insertislemi">Submit</button>
+						<button type="reset" name="resettislemi">Reset</button>
+					</th>
+				</tr>
+		</table>
+	</form>
